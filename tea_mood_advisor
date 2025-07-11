@@ -1,0 +1,20 @@
+# 🍵 Tea Mood Advisor
+# A simple Python console program that suggests tea depending on the user's mood.
+
+def tea_advisor(mood_today):
+    """
+    Returns a tea suggestion based on the user's mood.
+    """
+    if mood_today == "sad":
+        return "Try a warm green tea to calm yourself 🫖"
+    elif mood_today == "happy":
+        return "Enjoy a fruity tea to keep your good mood 🍓"
+    elif mood_today == "tired":
+        return "A strong black tea will boost your energy ⚡"
+    else:
+        return "Tea ☕ is always a good idea. Choose your favorite one ☺️"
+
+if __name__ == "__main__":
+    mood_today = input("How are you feeling today? (sad/happy/tired/other): ").lower()
+    advice = tea_advisor(mood_today)
+    print(advice)
